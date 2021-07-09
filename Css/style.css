@@ -154,7 +154,7 @@ img {
     -ms-overflow-style: -ms-autohiding-scrollbar;
   }
   .sidenav::after {
-    content: "🠖";
+    content: "→";
     color: #fff;
     position: absolute;
     top: 5px;
