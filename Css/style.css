@@ -8,8 +8,12 @@ blockquote {
   margin: 0px;
 }
 
+blockquote {
+  color: #fff!important;
+}
+
 body {
-  background: #cac6c6; /* mudar*/
+  background: #fff; /* mudar*/
   font-family: "Nunito", Georgia, "Times New Roman", Times, serif;
 }
 
@@ -64,7 +68,7 @@ img {
 
 .header {
   grid-area: header;
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  background: linear-gradient(135deg, #301934, #483248);
   padding: 30px;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -118,7 +122,7 @@ img {
 
 .sidenav {
   grid-area: sidenav;
-  background: #8f8e8e; /* mudar*/
+  background: #FAF9F6; /* mudar*/
   padding: 30px;
 }
 
@@ -127,7 +131,7 @@ img {
   min-width: 60px;
   max-width: 100px;
   margin: 0 auto 30px auto;
-  background: #121212;
+  background: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
@@ -135,7 +139,7 @@ img {
 }
 
 .sidenav li a:hover {
-  background: #b07dfb;
+  background: #483248;
 }
 
 @keyframes seta {
@@ -156,7 +160,7 @@ img {
   }
   .sidenav::after {
     content: "→";
-    color: #fff;
+    color: #000;
     position: absolute;
     top: 5px;
     right: 30px;
@@ -205,11 +209,11 @@ blockquote {
 
 .col-wide {
   grid-column: 1 / -1;
-  color: #fff;
+  color: #000;
 }
 
 .class-p {
-  color: #fff;
+  color: #000;
 }
 
 .imagem-1 {
@@ -236,7 +240,7 @@ p {
 /* ------------------------------------------ */
 
 .titulo {
-  color: #b07dfb;
+  color: #483248;
 }
 
 .titulo h1 {
@@ -305,7 +309,7 @@ p {
 
 .destaque {
   font-size: 12px;
-  color: #b07dfb;
+  color: #483248;
   max-width: 16em;
 }
 
@@ -315,7 +319,7 @@ p {
   padding: 30px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  background: linear-gradient(135deg, #301934, #483248);
 }
 
 .citaçao p {
@@ -333,14 +337,14 @@ p {
 }
 
 .atributos li + li {
-  border-top: 2px solid #b07dfb;
+  border-top: 2px solid #483248;
 }
 
 /* ------------------------------------------ */
 
 .anuncios {
   grid-area: anuncios;
-  background: #8f8e8e; /* mudar*/
+  background: #FAF9F6; /* mudar*/
   display: grid;
   align-content: start;
   padding: 30px;
@@ -352,7 +356,7 @@ p {
 
 .footer {
   grid-area: footer;
-  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  background: linear-gradient(135deg, #301934, #483248);
 }
 
 .footer p {
