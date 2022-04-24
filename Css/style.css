@@ -9,7 +9,7 @@ blockquote {
 }
 
 body {
-  background: #222222;
+  background: #cac6c6; /* mudar*/
   font-family: "Nunito", Georgia, "Times New Roman", Times, serif;
 }
 
@@ -113,11 +113,12 @@ img {
   }
 }
 
+
 /* ------------------------------------------ */
 
 .sidenav {
   grid-area: sidenav;
-  background: #101010;
+  background: #8f8e8e; /* mudar*/
   padding: 30px;
 }
 
@@ -339,7 +340,7 @@ p {
 
 .anuncios {
   grid-area: anuncios;
-  background: #101010;
+  background: #8f8e8e; /* mudar*/
   display: grid;
   align-content: start;
   padding: 30px;
@@ -358,4 +359,21 @@ p {
   color: #fff;
   text-align: center;
   padding: 30px;
+}
+
+.lua {
+  padding: 2px;
+  display: block;
+  transition: 1ms;
+  border-radius: 5px;
+  width: 20px;
+  height: auto;
+}
+
+.darkmodeBody {
+  background-color: #222222;
+}
+
+.leftandright {
+  background-color: #101010;
 }
