@@ -98,6 +98,13 @@ img {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.header img:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.2s; 
+}
+
 .header li + li {
   margin-left: 30px;
 }
@@ -140,6 +147,10 @@ img {
 
 .sidenav li a:hover {
   background: #483248;
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.5s; 
 }
 
 @keyframes seta {
@@ -221,8 +232,29 @@ blockquote {
   align-self: end;
 }
 
+.imagem-1:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.6s; 
+}
+
 .imagem-2 {
   align-self: end;
+}
+
+.imagem-2:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.6s; 
+}
+
+.imagem-3:hover {
+  -ms-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 0.6s; 
 }
 
 /* ------------------------------------------ */
@@ -354,6 +386,18 @@ p {
   padding: 30px;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.anuncions-item {
+  transition: transform .2s;
+  animation-duration: 3s;
+}
+
+.anuncios-item:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 0.6s; 
 }
 
 /* ------------------------------------------ */
