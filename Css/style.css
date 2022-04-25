@@ -310,13 +310,17 @@ p {
 .destaque {
   font-size: 12px;
   color: #483248;
-  max-width: 16em;
+  max-width: 20em;
+}
+
+.atributos {
+  padding: 1px!important;
 }
 
 .citaçao,
 .atributos {
   align-self: start;
-  padding: 30px;
+  padding: 50px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
   background: linear-gradient(135deg, #301934, #483248);
