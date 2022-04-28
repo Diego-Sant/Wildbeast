@@ -1,20 +1,42 @@
 
-const blacktheme = document.getElementById("darkTheme");
+const html = document.querySelector("html")
+const checkbox = document.querySelector("input[name=theme]")
+
+const getStyle = (element, style) => 
+window
+  .getComputedStyle(element)
+  .getPropertyValue(style)
+
+const initialColors = {
+  bg: getStyle(html, "--bg"),
+  bgHfq: getStyle(html, "--bg-hfq"),
+  colorText: getStyle(html, "--color-text"),
+  colorSpan: getStyle(html, "--color-span"),
+  colorSides: getStyle(html, "--color-sides"),
+  colorHeadings: getStyle(html, "--color-headings"),
+}
+
+const darkMode = {
+  bg: "#222222",
+  bgHfq: "linear-gradient(135deg, #8844ee, #b07dfb)",
+  colorText: "#fff",
+  colorSpan: "#b07dfb",
+  colorSides: "#101010",
+  colorHeadings: "#3664FF",
+}
+
+const transformKey = key => 
+    "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
+
+const changeColors = (colors) => {
+
+  Object.keys(colors).map(key => 
+    html.style.setProperty(transformKey(key), colors[key]) 
+)
+}
 
 
 
-function darkmode() {
-    var element = document.body;
-    var sidebar = document.getElementById("sidebar");
-    var sidebar2 = document.getElementById("sidebar2");
-    element.classList.toggle("darkmodeBody");
-    sidebar.classList.toggle("leftandright");
-    sidebar2.classList.toggle("leftandright")
-    
-    var luahover = document.getElementById("hoverlua");
-    
-  }
-
-
-
-
+checkbox.addEventListener("change", ({target}) => {
+  target.checked ? changeColors(darkMode) : changeColors(initialColors)
+})
