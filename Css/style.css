@@ -7,6 +7,7 @@ html {
   --color-span:#483248;
   --color-sides: #FAF9F6;
   --color-headings: #0077FF;
+  --color-setas: #000;
 }
 
 
@@ -185,7 +186,7 @@ img {
   }
   .sidenav::after {
     content: "→";
-    color: #000;
+    color: var(--color-setas);
     position: absolute;
     top: 5px;
     right: 30px;

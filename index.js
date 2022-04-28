@@ -14,6 +14,7 @@ const initialColors = {
   colorSpan: getStyle(html, "--color-span"),
   colorSides: getStyle(html, "--color-sides"),
   colorHeadings: getStyle(html, "--color-headings"),
+  colorSetas: getStyle(html, "--color-setas"),
 }
 
 const darkMode = {
@@ -23,6 +24,7 @@ const darkMode = {
   colorSpan: "#b07dfb",
   colorSides: "#101010",
   colorHeadings: "#3664FF",
+  colorSetas: "#fff",
 }
 
 const transformKey = key => 
