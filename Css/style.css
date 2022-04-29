@@ -8,6 +8,8 @@ html {
   --color-sides: #FAF9F6;
   --color-headings: #0077FF;
   --color-setas: #000;
+  --color-bgside: #fff;
+  --color-hoverside: #483248;
 }
 
 
@@ -153,7 +155,7 @@ img {
   min-width: 60px;
   max-width: 100px;
   margin: 0 auto 30px auto;
-  background: #fff;
+  background: var(--color-bgside);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.15);
@@ -161,7 +163,7 @@ img {
 }
 
 .sidenav li a:hover {
-  background: #483248;
+  background: var(--color-hoverside);
   -ms-transform: scale(1.05);
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -471,7 +473,7 @@ label::after{
 }
 
 input:checked + label {
-  background-color: var(--color-headings);
+  background-color: #483248;
 }
 
 input:checked + label::after {
